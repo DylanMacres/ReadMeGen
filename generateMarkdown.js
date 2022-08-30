@@ -3,6 +3,7 @@
 function renderLicenseBadge(data) {
   const licenseArray = data.license[0];
   let licenseString = "";
+  //a set of if statements that determine which license was used and their corresponding imagae 
   if(licenseArray === "Apache"){
     console.log("yay!!")
     licenseString = `![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`
@@ -18,16 +19,6 @@ function renderLicenseBadge(data) {
    
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-// function renderLicenseLink(license) {
-//   let link = "";
-
-// }
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -68,5 +59,5 @@ function generateMarkdown(data) {
 
 `;
 }
-
+// allow it to be used in the index
 module.exports = generateMarkdown;

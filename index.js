@@ -6,35 +6,6 @@ const generateMarkdown = require("./generateMarkdown")
 const path = require('path')
 const fileName = "README.md"
 
-//add the common licenses information perhaps in an array
-//was going to use the array in the generate markdown js file but got stuck so i switched it up 
-
-
-
-
-//  const licenseArray = [
-//     {
-//         name:'Apache',
-//         url:"https://www.apache.org/licenses/LICENSE-2.0",
-//         img:"https://img.shields.io/badge/License-Apache_2.0-blue.svg",
-//     },
-//     {
-//         name:'Mozilla',
-//         url:"https://www.mozilla.org/en-US/MPL/2.0/",
-//         img:"https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg",
-//     },
-//     {
-//         name:'MIT',
-//         url:"https://opensource.org/licenses/MIT",
-//         img:"https://img.shields.io/badge/License-MIT-yellow.svg",
-//     },
-
-//     {
-//         name:'Boost',
-//         url:"https://www.boost.org/LICENSE_1_0.txt",
-//         img:"https://img.shields.io/badge/License-Boost_1.0-lightblue.svg",
-//     }
-//  ]
 //questions to ask
 let questions = ([
     {
@@ -86,34 +57,33 @@ let questions = ([
         ]
     }
 ])
-// .then((results) => {
-//     console.log(results)
-
-//     fs.writeFile('README.md', )
-// })
+//function to create the file with the filename as READme and use the data from the questions
 function writeFile(fileName, data){
+    //calling the markdownjs file to generate page
     const markdownjs = generateMarkdown(data);
+    //actually creating the file
     fs.writeFile(fileName, markdownjs, function (err){
+     //catch error
         if (err) {
             console.log('this does not work')
         }
     })
 }
     
-//catch error
-//answers data
+
+//function to initialize the page 
 function init() {
     inquirer.prompt(questions)
 .then (function (data) {
     writeFile(fileName, data)
 })
 }
-
+//calling the init
 init()
 
 
-//function to make the Readme file 
+ 
 
-//fuction to intialize the app 
+ 
 
-//call the init 
+
