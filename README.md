@@ -1,11 +1,11 @@
-# ReadMe Gen
+# Readme Generator
     
   ## Description
-    undefined
+    To create a professional readme from the inquirer npm
 
   ## Table Of Contents:
 
-  1. [Description](#description)
+  1. [Description](#Description)
   2. [Installation](#Installation)
   3. [Usage](#Usage)
   4. [Contributions](#credits)
@@ -16,16 +16,16 @@
 
 
   ## Installation 
-    open the terminal in the code and hit node index.
+    open the code and locate the terminal for the index and run "node index"
 
   ## Usage
-   for all github repos
+   to be used for github repos and for people who love to code!
 
   ## Contributions 
-    just me 
+    Du coding bootcamp 2022! with dan k as the teach and george/kirtley T.As!
 
   ## Github
-    dmacres
+    DylanMacres
 
   ## E-Mail
     macresdylan@gmail.com

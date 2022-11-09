@@ -25,11 +25,11 @@ function generateMarkdown(data) {
   return `# ${data.title}
     
   ## Description
-    ${data.description}
+    ${data.Description}
 
   ## Table Of Contents:
 
-  1. [Description](#description)
+  1. [Description](#Description)
   2. [Installation](#Installation)
   3. [Usage](#Usage)
   4. [Contributions](#credits)
